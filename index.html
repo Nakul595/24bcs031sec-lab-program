@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuctional calculator</title>
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  input,select,button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  #result{
+      margin-top:20px;
+      font-size:20px;
+      font-weight:bold;
+      color: bisque;
+  }
+</style>
+</head>
+<body>
+    <h2>Fuctional calculator</h2>
+    <input type="number" id="num 1"
+    placeholder="Enter first number">
+    <input type="number" id="num2"
+    placeholder="Enter second number">
+    <br>
+    <select id="operation">
+        <option value="add"> Add(+)</option>
+        <option value="subtract">subtract(-)</option>
+        <option value="multiply">multiply(*)</option>
+        <option value="divide">divide(/)</option>
+    </select>
+    <button onclick="calculate()">calculate</button>
+    <div id="result">result</div>
+    <script>
+        function calculate(){
+            let Random number</h2>
+            <button onclick="">submit</button>
+            <br />
+            div id="output"></div>
+            let result;
+            if(isNaN(num1)||isNaN(num2)){
+                result="please Enter valid number!";
+            } else {
+              switch(operation){
+                case "add":
+                result=num1+ num2;
+                break;
+                case "subtract":
+                result=num1- num2;
+                break;
+                case "multiply":
+                result=num1* num2;
+                break;
+                case "divide":
+                    if(num2===0) {
+                result="cannot divide by zero!";
+                    }else{
+                        result =num1/num2;
+                    }
+                break;
+                default:
+                    result="Invalid operation";
+              }
+            }
+            document.getElementById("result").innerText="result:"+result;
+            }
+        
+    </script>
+    <h2>Random number</h2>
+    <button onclick="">submit</button>
+    <br>
